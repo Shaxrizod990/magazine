@@ -9,26 +9,10 @@ class DioClient {
 
   DioClient() {
     _dio.interceptors.add(
-      InterceptorsWrapper(
-        onRequest: _onRequest,
-        onError: _onError,
+      LogInterceptor(
+        request: true,
+        responseBody: true,
       ),
     );
   }
-
-  Future<void> _onError(
-      DioException error,
-      ErrorInterceptorHandler handler,
-      ) async {
-    return handler.next(error);
-  }
-
-  Future<void> _onRequest(
-      RequestOptions options,
-      RequestInterceptorHandler handler,
-      ) async {
-    return handler.next(options);
-  }
-
 }
-

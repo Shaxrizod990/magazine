@@ -4,8 +4,8 @@ import 'package:magazine/route.dart';
 import 'package:magazine/utils/constants.dart';
 
 
-class SplashScreen extends StatelessWidget {
-  const SplashScreen({Key? key}) : super(key: key);
+class SPlashScreen extends StatelessWidget {
+  const SPlashScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,8 +17,9 @@ class SplashScreen extends StatelessWidget {
       backgroundColor: Colors.lightBlueAccent,
       body: Center(
           child: Image.asset(
-        "assets/images/logo.png",
+        "assets/images/example.png",
         width: 180,
+            height: 180,
       )),
     );
   }

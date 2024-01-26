@@ -64,8 +64,8 @@ BlocBuilder<NavigationCubit, NavigationState> _buildBottomNavigation(
           showSelectedLabels: false,
           showUnselectedLabels: false,
           elevation: 0,
-          backgroundColor: Colors.black45,
-          unselectedItemColor: Colors.white,
+          backgroundColor: Colors.white,
+          unselectedItemColor: Colors.black26,
           selectedIconTheme: IconThemeData(
             color: Colors.black,
             size: ((IconTheme.of(mContext).size)! * 1.3),

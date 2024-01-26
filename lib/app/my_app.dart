@@ -1,17 +1,20 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:magazine/ui/blocs/journal_cubit/journal_cubit.dart';
 import 'package:magazine/ui/blocs/navigation/navigation_cubit.dart';
 
 import '../route.dart';
+
 class MyApp extends StatelessWidget {
   const MyApp({Key? key});
 
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
-      providers: [BlocProvider(create: (c)=> NavigationCubit()),],
+      providers: [
+        BlocProvider(create: (c) => NavigationCubit()),
+        BlocProvider(create: (c) => JournalCubit()),
+      ],
       child: MaterialApp.router(
         title: 'journals',
         debugShowCheckedModeBanner: false,

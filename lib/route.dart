@@ -9,9 +9,10 @@ import 'package:magazine/ui/screens/main/main_screen.dart';
 import 'package:magazine/ui/screens/message/message_screen.dart';
 import 'package:magazine/ui/screens/profile/profile_screen.dart';
 import 'package:magazine/ui/screens/search/search_screen.dart';
-import 'package:magazine/ui/screens/splash/SplashScreen.dart';
+import 'package:magazine/ui/screens/splash/splash_screen.dart';
 import 'package:magazine/utils/constants.dart';
 import 'package:magazine/utils/not_found_page.dart';
+
 
 
 
@@ -25,7 +26,7 @@ class AppRouter {
     initialLocation: '/',
     routes: [
       GoRoute(
-          name: 'splash', path: '/', builder: (context, state) => const SplashScreen()),
+          name: 'splash', path: '/', builder: (context, state) => const SPlashScreen()),
       ShellRoute(
         navigatorKey: _shellNavigatorKey,
         builder: (context, state, child) {
